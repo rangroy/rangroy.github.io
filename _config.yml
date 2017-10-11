@@ -1,28 +1,70 @@
-# Dependencies
-markdown:         kramdown
-highlighter:      rouge
+# ---------------------------------------------------------------
+# Jekyll & Global Configuration
+## Docs: https://jekyllrb.com/docs/configuration/
+# ---------------------------------------------------------------
 
-# Setup
-title:            Hydeout
-tagline:          'A Jekyll theme'
-description:      'The <a href="http://hyde.getpoole.com" target="_blank">Hyde</a> theme for <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, refreshed.'
-url:              https://fongandrew.github.io/hydeout
-baseurl:          # the optional subpath of your site, e.g. "/blog"
-                  # NB: This applies to all pages in your Jekyll site.
-                  # If you want to move just the blog index pages but keep
-                  # other pages at root, see the paginate_path and
-                  # sidebar_blog_link below.
+# Site
+title: NexT
+subtitle:
+description:
+author: John Doe
+# Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
+language: en
+date_format: '%Y-%m-%d'
 
-author:
-  name:           'Andrew Fong'
-  url:            https://twitter.com/fongandrewc
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com' and baseurl as '/child'
+url:
+baseurl:
+permalink: pretty
 
-paginate:         5
-# paginate_path:    '/page:num'
-                    # Or '/blog/page:num' if you want to move your index pages
+# Pagination
+paginate: 10
+#paginate_path: "/page:num/"
+#archive:
+  #paginate: 10
+  #paginate_path: "/page:num/"
+#category:
+  #paginate: 10
+  #paginate_path: "/page:num/"
+#tag:
+  #paginate: 10
+  #paginate_path: "/page:num/"
 
+# Handling Reading
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "Gemfile", "Gemfile.lock", "README_en.md"]
+
+# Separator
+#excerpt_separator: <!-- more -->
+
+# Code Highlighter
+## 'pygments' is unsupported on GitHub Pages now.
+highlighter: rouge
+
+#### Markdown Processors
+## 'redcarpet' is unsupported on GitHub Pages now.
+markdown: kramdown
+kramdown:
+    input: GFM
+
+# Default Attributes
+## Docs: https://jekyllrb.com/docs/configuration/#front-matter-defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true
+
+# Atom feed
+feed:
+  path: atom.xml
+
+# Plugins
+## Docs: https://help.github.com/articles/configuring-jekyll-plugins/
 plugins:
-<<<<<<< HEAD
 # jemoji conficts with toc in some no-ascii post
 # - jemoji
  - jekyll-sitemap
@@ -659,18 +701,3 @@ images: assets/images
 # Theme version
 version: 5.1.1
 github: [metadata] encoding: UTF-8 kramdown: input: GFM hard_wrap: false
-=======
-  - jekyll-feed
-  - jekyll-gist
-  - jekyll-paginate
-
-# Custom vars
-version:            3.4.1
-sidebar_home_link:  true
-# sidebar_blog_link:  '/blog'   # By default, your home page is your blog
-                                # page. If you change your paginate_path,
-                                # set this to the root of the paginate_path
-                                # to enable a separate blog link.
-github:
-  repo:             https://github.com/fongandrew/hydeout
->>>>>>> parent of ac8e140... theme1
