@@ -700,4 +700,4 @@ images: assets/images
 
 # Theme version
 version: 5.1.1
-github: [metadata] encoding: UTF-8 kramdown: input: GFM hard_wrap: false
+github: [metadata]
