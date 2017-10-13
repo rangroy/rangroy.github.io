@@ -360,21 +360,21 @@ highlight_theme: normal
 #      Comments    #
 # ---------------- #
 # support provider: disqus, gitment
-comments_provider: gitment
+#comments_provider: gitment
 # !!!重要!!! 请修改下面这些信息为你自己申请的
 # !!!Important!!! Please modify infos below to yours
 # https://disqus.com
-disqus:
-    username: Bolo
+#disqus:
+#    username: Bolo
 # https://imsun.net/posts/gitment-introduction/
-gitment:
-    owner: rangroy
-    repo: rangroy.github.io
-    oauth:
-        client_id: ec7e3da6ee1c45f4b283
-        client_secret: b4911734af2a56aed15f053950893d2a758dfc2
+#gitment:
+#    owner: rangroy
+#    repo: rangroy.github.io
+#    oauth:
+#        client_id: ec7e3da6ee1c45f4b283
+#        client_secret: b4911734af2a56aed15f053950893d2a758dfc2
 # 在使用其它评论组件时可点击显示 Disqus
-lazy_load_disqus : false
+#lazy_load_disqus : false
 
 # ---------------------------------------------------------------
 # Third Party Services Settings
@@ -398,15 +398,15 @@ han: false
 # Duoshuo ShortName
 #duoshuo_shortname:
 
-# Disqus
-#   enable: true
+ Disqus
+   enable: true
 #   shortname:
   # count: true
   # hide comments (visitors need to click to load the comments)
   # count need to be false when hide is true
 #   hide: false
 
-# Hypercomments
+# Hypercommentsß
 #hypercomments_id:
 
 # Gentie productKey
