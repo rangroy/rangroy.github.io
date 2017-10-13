@@ -400,10 +400,10 @@ han: false
 #   enable: true
 #   shortname:
   # count: true
-  
+
 # Disqus
 disqus:
-  enable: true
+  enable: false
   shortname:
   count: true
   # hide comments (visitors need to click to load the comments)
