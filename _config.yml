@@ -372,7 +372,7 @@ gitment:
     repo: rangroy.github.io
     oauth:
         client_id: ec7e3da6ee1c45f4b283
-        client_secret: b4911734af2a56aed15f053950893d2a758dfc2
+        client_secret: b4911734af2a56aed15f053950893d2a758dfc23
 # 在使用其它评论组件时可点击显示 Disqus
 lazy_load_disqus : false
 
