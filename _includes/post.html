@@ -12,6 +12,7 @@
     {% elsif site.duoshuo_shortname and site.duoshuo_share %}
       {% include _partials/share/duoshuo_share.html %}
     {% endif %}
+<<<<<<< HEAD
     {% if page.comments %}
     <div id="container"></div>
 <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
@@ -29,5 +30,8 @@ var gitment = new Gitment({
 gitment.render('container')
 </script>
     {% endif %}
+=======
+    {% include comments.html %}
+>>>>>>> f7413a817d4525a800e66268ac468896f83787b6
   </div>
 </div>
